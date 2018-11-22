@@ -1,0 +1,11 @@
+[Unit]
+Description=managing of the workers
+Requires=sentry-worker.service
+Requires=sentry.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/sentry run cron
+Environment=SENTRY_CONF=/etc/sentry
+WorkingDirectory=~
+User=sentry

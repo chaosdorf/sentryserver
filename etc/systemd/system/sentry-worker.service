@@ -1,0 +1,11 @@
+[Unit]
+Description=queues and workers
+Requires=sentry.service
+Requires=sentry-cron.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/sentry run worker
+Environment=SENTRY_CONF=/etc/sentry
+WorkingDirectory=~
+User=sentry
