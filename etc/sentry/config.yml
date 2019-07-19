@@ -79,3 +79,9 @@ filestore.options:
 #   access_key: 'AKIXXXXXX'
 #   secret_key: 'XXXXXXX'
 #   bucket_name: 's3-bucket-name'
+
+github-app.id: 36159
+github-app.name: 'chaosdorf-sentry'
+github-app.private-key: 'privatekey'
+github-app.client-id: ''
+github-app.client-secret: ''
