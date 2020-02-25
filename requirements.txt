@@ -1,5 +1,4 @@
 sentry==9.1.2
-sentry-irc==3.2.0
 sentry-plugins==9.1.2
 certbot==0.39.0
 certbot-dns-cloudflare==0.39.0
