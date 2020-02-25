@@ -1,0 +1,13 @@
+diff --git a/src/sentry/utils/snuba.py b/src/sentry/utils/snuba.py
+index e7404fb908..7aa20d20d7 100644
+--- a/src/sentry/utils/snuba.py
++++ b/src/sentry/utils/snuba.py
+@@ -476,7 +476,7 @@ class SnubaQueryParams(object):
+     ):
+         # TODO: instead of having events be the default, make dataset required.
+         self.dataset = dataset or Dataset.Events
+-        self.start = start or datetime.utcfromtimestamp(0)  # will be clamped to project retention
++        self.start = start or datetime.utcfromtimestamp(0) + timedelta(hours=2)  # will be clamped to project retention
+         self.end = end or datetime.utcnow() + timedelta(seconds=1)
+         self.groupby = groupby or []
+         self.conditions = conditions or []
