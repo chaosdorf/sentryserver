@@ -1,0 +1,11 @@
+[Unit]
+Description=search
+Requires=clickhouse-server.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/snuba api
+Environment=FLASK_DEBUG=0
+WorkingDirectory=~
+User=sentry
+

@@ -2,6 +2,7 @@
 Description=main server
 Requires=sentry-worker.service
 Requires=sentry-cron.service
+Requires=sentry-snuba.service
 
 [Service]
 Type=simple
