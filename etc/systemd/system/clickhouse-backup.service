@@ -1,0 +1,7 @@
+[Unit]
+Description=backs up sentry_local clickhouse table data and schema
+
+[Service]
+Type=oneshot
+WorkingDirectory=/var/lib/clickhouse-backup
+ExecStart=/usr/local/bin/clickhouse-backup.sh
