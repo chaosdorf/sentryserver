@@ -1,4 +1,4 @@
-sentry==10.0.0
+sentry==20.6
 certbot==1.6.0
 certbot-dns-cloudflare==1.6.0
 more-itertools==5.0.0
